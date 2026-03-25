@@ -146,6 +146,7 @@ Un facteur de tolérance (**k**) permet de moduler la prise de risque et le nive
 
 ---
 
+
 ### Sorties techniques
 
 Le moteur peut produire :
@@ -232,6 +233,68 @@ Le système vise à :
 - fermentation adaptée : directe longue ou biga
 - température finale de pâte cible : à définir selon environnement
 - contraintes critiques : gestion de la chaleur, maturité de la pâte, cohérence cuisson / protocole
+
+## Exemple de fonctionnement du moteur
+
+### Scénario
+
+- Four : domestique (450°C)
+- Farine : W300
+- Hydratation cible : 65%
+- Température ambiante : 22°C
+- Temps disponible : 24h
+- Objectif : pizza légère avec bon développement de corniche
+
+---
+
+### Analyse du moteur
+
+- Four limité → pénalisation des styles napolitains extrêmes
+- Hydratation élevée → cohérence avec objectif d’alvéolage
+- Temps disponible → compatible avec fermentation longue
+- Farine W300 → adaptée à fermentation intermédiaire / longue
+
+---
+
+### Recommandations
+
+**Styles compatibles**
+- Pizza contemporaine
+- Pizza hybride
+- Teglia légère
+
+**Style déconseillé**
+- Napolitaine cuisson très haute température
+
+---
+
+### Paramètres proposés
+
+- Hydratation : 63–65%
+- Température de l’eau : ~16°C (pour contrôler la température finale de pâte)
+- Fermentation : biga ou direct long maîtrisé
+- Maturation : ~24h
+
+---
+
+### Cuisson
+
+- Température cible : ~450°C
+- Surveillance : coloration rapide et développement de corniche
+
+---
+
+### Niveau de risque
+
+- Modéré
+
+---
+
+### Points de vigilance
+
+- éviter la sur-fermentation
+- contrôler la température finale de pâte
+- adapter l’hydratation si la farine absorbe moins
   
 ## Pipeline de données
 
