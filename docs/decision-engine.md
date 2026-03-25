@@ -264,6 +264,15 @@ Sortie :
 
 ---
 
+## Exemple de règle métier
+
+Si :
+- température du four < 430°C
+
+Alors :
+- pénaliser les styles napolitains extrêmes
+- privilégier les styles contemporains ou hybrides
+
 ## Vision
 
 Le Decision Engine est conçu comme un système évolutif :
