@@ -1,6 +1,6 @@
 # G.L.U.T.E.N — Pizza Intelligence Engine (Local AI)
 
-Moteur d’intelligence artificielle local dédié à la compréhension et à l’optimisation des processus de fabrication de la pizza.
+G.L.U.T.E.N est un système expert local capable de transformer des contraintes réelles (température, farine, matériel, temps) en protocoles de pizza cohérents, reproductibles et expliqués.
 
 Projet de recherche et développement combinant science alimentaire, expertise métier pizzaiolo et intelligence artificielle.
 
@@ -32,6 +32,23 @@ Construire un système capable de raisonner sur la pâte à pizza comme un exper
 
 ---
 
+## Exemple rapide
+
+Entrée :
+
+- four domestique (450°C)
+- farine W300
+- température ambiante 22°C
+- 24h disponibles
+
+Sortie :
+
+- style recommandé : pizza contemporaine
+- hydratation : 63–65%
+- température eau : ~16°C
+- fermentation : longue maîtrisée
+- niveau de risque : modéré
+  
 ## Aperçu
 
 ![Interface](screenshots/screen-gluten.jpg)
@@ -295,6 +312,39 @@ Le système vise à :
 - éviter la sur-fermentation
 - contrôler la température finale de pâte
 - adapter l’hydratation si la farine absorbe moins
+
+## Règles métier (exemples)
+
+Le moteur repose sur un ensemble de règles permettant de filtrer et pondérer les décisions.
+
+### Compatibilité four / style
+
+- Si température four < 430°C  
+  → pénaliser les styles napolitains extrêmes  
+  → privilégier les styles contemporains ou hybrides  
+
+### Compatibilité farine / fermentation
+
+- Si W < 220  
+  → limiter les fermentations longues  
+  → privilégier des protocoles courts ou adaptés  
+
+### Hydratation / cuisson
+
+- Si hydratation élevée + four domestique  
+  → ajuster pour éviter une pâte difficile à cuire
+
+## Logique simplifiée
+
+Le moteur suit une logique en plusieurs étapes :
+
+1. normalisation des entrées  
+2. validation des contraintes  
+3. filtrage des styles compatibles  
+4. calcul des plages de paramètres  
+5. génération de protocoles  
+6. scoring des solutions  
+7. sélection selon le niveau de risque (k)
   
 ## Pipeline de données
 
