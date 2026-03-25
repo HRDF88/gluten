@@ -34,7 +34,7 @@ Construire un système capable de raisonner sur la pâte à pizza comme un exper
 
 ## Aperçu
 
-![Interface](screenshots/gluten-ui.png)
+![Interface](screenshots/screen-gluten.jpg)
 
 ---
 
@@ -269,6 +269,7 @@ Corpus structuré :
 - `docs/architecture.md`
 - `docs/pipeline.md`
 - `docs/dataset.md`
+- `docs/decision-engine.md`
 - `data/sources_sample.csv`
 - `screenshots/`
 
