@@ -1,1 +1,15 @@
+# Architecture
 
+Le système G.L.U.T.E.N repose sur plusieurs modules :
+
+## Orchestrateur
+Gestion des requêtes et routing
+
+## Pizzatron
+Moteur de décision et calcul
+
+## Pizza Codex
+Base vectorielle (FAISS + embeddings)
+
+## Pipeline ingestion
+PDF → OCR → nettoyage → chunking → indexation
